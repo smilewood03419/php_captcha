@@ -1,0 +1,175 @@
+
+#main-page #hcs-header-container .desktop-logo svg{
+  width: 166px;
+  height: 34px;
+}
+#main-page #hcs-header-container .mobile-logo svg{
+  width: 36px;
+}
+#main-page .flex-row {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 3.375rem;
+  padding-right: 3.375rem;  
+}
+#main-page .mobile-logo {
+  display: none;
+}
+#main-page .right-box {
+    margin-left: 23px;
+}
+#main-page .page-content {
+  height: calc(100vh - 120px);
+  display: flex;
+  background: #f5f7f8;
+  align-items: center;
+}
+#main-page .left-image {
+  display: flex;
+  align-items: center;
+}
+#main-page .page-content .form-content {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+}
+#main-page .page-content .form-content img {
+  width: 250px;
+  margin: 22px 0px;
+}
+
+
+@media(max-width: 768px) {
+  #main-page .desktop-logo {
+    display: none;
+  }
+  #main-page .mobile-logo {
+    display: block;
+  }
+  #main-page .flex-row {
+    padding-left: 0rem;
+    padding-right: 0rem;  
+  }
+}
+
+
+#main-page .login .sign-title {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+#main-page .login #pass-title {
+  margin: 0px;
+  font-family: Raleway, sans-serif;
+  font-size: 28px;
+}
+#main-page .login {
+  max-width: 544px;
+  width: 544px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#main-page #email-promo-footer {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+}
+#email-message {
+  font-weight: 700;
+  margin-top: 27px;
+  margin-bottom: 17px;
+}
+#main-page button.ux-button {
+  width: 345px;
+  font-size: 15px;
+  padding: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+#main-page button.ux-button:hover {
+  background: #00a4a6;
+  border: solid 2px #00a4a6;
+  color: #fff;
+}
+
+
+#main-page .login input {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 14px 12px;
+  font-size: 16px;
+  border-radius: 2px; 
+  font-family: Raleway, sans-serif;
+}
+form.login .form-content {
+  padding: 25px 100px;
+}
+#main-page .login input[type=email],
+#main-page .login input[type=password] {
+  border: 1px solid #000;
+  transition: .2s;
+}
+#main-page .login input[type=submit] {
+  border: none;
+  background: #000;
+  color: white;
+  font-weight: bold;  
+  transition: 0.2s;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+#main-page .login input[type=submit]:hover {
+  background: #00a4a6;  
+}
+#appheader-footer {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+}
+#appheader-footer a {
+  color: #00a4a6;
+}
+@media(max-width: 1000px) {
+  #main-page .left-image {
+    display: none;
+  }
+  #main-page .page-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 700px) {
+  #main-page .login {
+    max-width: 100%;
+    width: 100%;
+  }
+  #main-page .page-content .form-content img {
+    width: 65%;
+    margin: 22px 0px;
+  }
+  form.login .form-content {
+    padding: 0px;
+  }
+  #main-page button.ux-button {
+    width: 100%;
+  }
+  #main-page .page-content {
+  }
+  #main-page .right-box {
+    margin-left: 0px;
+    width: 100%;
+  }
+  #appheader-footer {
+    text-align: center;
+    padding: 0px 12px;
+    line-height: 18px;
+  }
+}
